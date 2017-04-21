@@ -39,12 +39,12 @@ for(i=1;i<10;i++){
     .append("rect")
     .attr("width", 44)
     .attr("height", function(d) {return d})
-    .attr("fill", "pink")
+    .attr("fill", "red")
     
-    //.style("opacity", .25)
+    
     .attr("x", function(d,i) {return i * 46;})
-    .attr("y", function(d) {return 280 - d/200;});
-    //alert("Me has presionado!!");
+    .attr("y", function(d) {return 230 - d/100;});
+    
     svg.selectAll("text")
     .data(valores)
     .enter()
@@ -52,16 +52,7 @@ for(i=1;i<10;i++){
     .text(function(d) {
     return d;
     })
-    .attr("font-family", "sans-serif")
-    .attr("font-size", "11px")
-    .attr("fill", "white")
-    .attr("x", function(d, i) {
-    return (i * 46)+3;
-    })
-    .attr("y", function(d) {
-    return (280 - d/200)+8;
-    })
-    
+ 
     
     });
     
